@@ -2386,54 +2386,116 @@ transform:translateY(-70%);
 		  }  
 	
 
-
+/* overlay effect */
 		
+		  .container {
+			position: relative;
+			width: 100%;
+		  }
+		  
+		  
+		  
+		  .overlay {
+			position: absolute;
+			top: 0%;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: .5s ease;
+			background-color:rgba(0, 128, 128, 0.763);
+		  }
+		  
+		  .container:hover .overlay {
+			opacity: 1;
+		  }
+		  
+		  .text {
+			color: rgb(255, 255, 255);
+			font-size: 80%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			text-align: center;
+		  }	
+  
+
+		 .worktype {
+			 font-size: 80%;
+			 text-align: left;
+		 }
+
+		/* didi name */
+		@import url(https://fonts.googleapis.com/css?family=Lato:900);
+		*, *:before, *:after{
+		  box-sizing:border-box;
+		}
 		
-
-		
-
-/* the typing effect */
-
-/* body {
-	background: #333;
-	padding-top: 5em;
-	display: flex;
-	justify-content: center;
-  } */
-
- 
-  /*THE CSS TYPING EFFECT START***************
-  /* DEMO-SPECIFIC STYLES */
-  /* .typewriter h4 {
-	color:black;
-	font-family: monospace;
-	overflow: hidden; 
-	border-right: .15em solid orange; 
-	white-space: nowrap; 
-	margin: 0 auto; 
-	letter-spacing: .15em; 
-	animation: 
-	  typing 3.5s steps(30, end),
-	  blink-caret .5s step-end infinite;
-	  padding-left: 45%;
-  } */
-  
-  
-  /* The typing effect */
-  /* @keyframes typing {
-	from { width: 0 }
-	to { width: 100% }
-  } */
-  
-  /* The typewriter cursor effect */
-  /* @keyframes blink-caret {
-	from, to { border-color: transparent }
-	50% { border-color: orange }
-  } */
-
-  /*THE CSS TYPING EFFECT END*******************
-
-
-  
-
-  
+		}
+		div.foo{
+		  width: 90%;
+		  margin: 0 auto;
+		  text-align: center;
+		}
+		.letter{
+		  display: inline-block;
+		  font-weight: 900;
+		  font-size: 1.5em;
+		  margin: 0.2em;
+		  position: relative;
+		  color: #00B4F1;
+		  transform-style: preserve-3d;
+		  perspective: 400;
+		  z-index: 1;
+		}
+		.letter:before, .letter:after{
+		  position:absolute;
+		  content: attr(data-letter);
+		  transform-origin: top left;
+		  top:0;
+		  left:0;
+		}
+		.letter, .letter:before, .letter:after{
+		  transition: all 0.3s ease-in-out;
+		}
+		.letter:before{
+		  color: rgb(46, 174, 161);
+		  text-shadow: 
+			-1px 0px 1px rgba(255,255,255,.8),
+			1px 0px 1px rgba(0,0,0,.8);
+		  z-index: 3;
+		  transform:
+			rotateX(0deg)
+			rotateY(-15deg)
+			rotateZ(0deg);
+		}
+		.letter:after{
+		  color: rgba(0,0,0,.11);
+		  z-index:2;
+		  transform:
+			scale(1.08,1)
+			rotateX(0deg)
+			rotateY(0deg)
+			rotateZ(0deg)
+			skew(0deg,1deg);
+		}
+		.letter:hover:before{
+		  color: #fafafa;
+		  transform:
+			rotateX(0deg)
+			rotateY(-40deg)
+			rotateZ(0deg);
+		}
+		.letter:hover:after{
+		  transform:
+			scale(1.08,1)
+			rotateX(0deg)
+			rotateY(40deg)
+			rotateZ(0deg)
+			skew(0deg,22deg);
+		}
