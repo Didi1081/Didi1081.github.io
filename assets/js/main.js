@@ -63,14 +63,14 @@
 			setTimeout(del, 1200);
 			
 			//typing sounds paused
-			x.pause();
+			// x.pause();
 		}
 		if (i < data[j].length) {
 			heading.innerHTML += data[j].charAt(i);
 			i++;
 			setTimeout(typing, 50);
 				//typing sounds play
-			x.play();
+			// x.play();
 		}
 		else {
 			j++;
