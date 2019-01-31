@@ -2239,7 +2239,7 @@ input, select, textarea {
 
 	#intro {
 		background: url("images/overlay.png"), 
-		url("https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8e944238c781ac3db785b574f331d047&auto=format&fit=crop&w=1651&q=80");
+		url("./images/girl.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2249,7 +2249,7 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("https://media.giphy.com/media/3PYYyyCK9pNzW/giphy.gif");
+		background: url("images/overlay.png"), url("./images/code.gifs.gif");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2258,7 +2258,7 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("https://images.unsplash.com/photo-1518684542453-94d5620df5f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b529ad36b280c715b20256e095f93ff3&auto=format&fit=crop&w=1733&q=80");
+		background: url("images/overlay.png"), url("./images/computer.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
