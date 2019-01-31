@@ -8,7 +8,7 @@
 		
 
 // Load Body
-	// $('#intro').css('background-image',url("https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8e944238c781ac3db785b574f331d047&auto=format&fit=crop&w=1651&q=80"))
+	// $('#intro').css('background-image',url("images/overlay.png"));
 	
 	// Breakpoints.
 	breakpoints({
